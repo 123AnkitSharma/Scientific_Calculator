@@ -4,6 +4,12 @@
   remote_user: ankit
   become: false
   tasks:
+
+    - name: Start Docker service
+      service:
+        name: docker
+        state: started
+        
     - name: Pull Docker Image
       docker_image:
         name: "itsankit123/scientific_calculator"
@@ -13,11 +19,6 @@
     - name: Display Docker Pull Result
       debug:
         var: docker_pull_result
-
-    - name: Start Docker service
-      service:
-        name: docker
-        state: started
 
     - name: Running container
       shell: docker run -it -d --name scientific_calculator itsankit123/scientific_calculator
