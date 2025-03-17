@@ -21,4 +21,4 @@
         var: docker_pull_result
 
     - name: Running container
-      shell: docker run -it -d --name scientific_calculator itsankit123/scientific_calculator
+      shell: docker run -it -d --name scientific_calculator_container itsankit123/scientific_calculator
