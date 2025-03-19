@@ -11,7 +11,7 @@ public class Scientific_Calculator {
 
     public static long factorial(int x) {
         if (x < 0) {
-            throw new IllegalArgumentException("Factorial of negative number is not defined.");
+            throw new IllegalArgumentException("Factorial of a negative number is not defined.");
         }
         long fact = 1;
         for (int i = 1; i <= x; i++) {
