@@ -2,7 +2,7 @@
 - name: Pull Docker Image from Docker Hub
   hosts: localhost
   remote_user: ankit
-  become: true
+  become: false
   tasks:
 
     - name: Start Docker service
