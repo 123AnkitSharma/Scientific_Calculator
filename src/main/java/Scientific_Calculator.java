@@ -4,7 +4,7 @@ public class Scientific_Calculator {
 
     public static double squareRoot(double x) {
         if (x < 0) {
-            throw new IllegalArgumentException("Square root of a negative number is not defined.");
+            throw new IllegalArgumentException("Square root of negative number is not defined.");
         }
         return Math.sqrt(x);
     }
